@@ -9,7 +9,7 @@
 	    	<% if logged_in? %>
  		      <div class="nav-item"><%= link_to 'ログアウト', logout_path, method: :delete, class: 'nav-link' %></div>
 				<% else %>
-	      	<div class="nav-item"><%= link_to '新規ユーザ登録', :new_user, class: 'nav-link' %></div>
+	      	<div class="nav-item"><%= link_to '新規ユーザ登録', new_user_path, class: 'nav-link' %></div>
 	      	<div class="nav-item"><%= link_to 'ログイン', login_path, class: 'nav-link' %></div>	      
 	      <% end %>
     	</div>
